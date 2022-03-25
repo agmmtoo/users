@@ -1,0 +1,21 @@
+{
+  "name": "user-auth-server",
+  "version": "1.0.0",
+  "description": "User api server for notes app.",
+  "main": "user-server.mjs",
+  "author": "Aung Myint Myat Oo",
+  "license": "MIT",
+  "scripts": {
+    "start": "DEBGU=users:* PORT=5858 SEQUELIZE_CONNECT=sequelize-sqlite.yaml node ./user-server.mjs"
+  },
+  "dependencies": {
+    "commander": "^5.x",
+    "debug": "^4.1.x",
+    "fs-extra": "^9.x",
+    "js-yaml": "^3.14.x",
+    "restify": "^8.5.x",
+    "restify-clients": "^2.6.x",
+    "sequelize": "^6.x",
+    "sqlite3": "^5.x"
+  }
+}
